@@ -12,5 +12,22 @@ export default function RootLayout() {
     });
   }, []);
 
-  return <Stack />;
+  return (
+  <Stack>
+    <Stack.Screen
+      name="index"
+      options={{ title: "Minhas Séries" }}
+    />
+
+    <Stack.Screen
+      name="form"
+      options={{ title: "Série" }}
+    />
+
+    <Stack.Screen
+      name="detalhe"
+      options={{ title: "Detalhes" }}
+    />
+  </Stack>
+);
 }
